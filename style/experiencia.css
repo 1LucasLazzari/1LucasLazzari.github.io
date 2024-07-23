@@ -1,0 +1,166 @@
+.conteiner{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  gap: 100px;
+  margin: 0px auto;
+  padding: 60px 60px;
+}
+.experiencias-escrita{
+  font-size: 9rem;
+  color:#E0E0E0;
+  font-weight: 700;
+  word-break: break-all;
+  max-width: 4ch;
+  line-height: 1;
+  margin: 0px;
+}
+.experiencias-informaçoes{
+  font-size: 1.5rem;
+  color: #525252;
+  max-width: 40ch;
+}
+.negrito{
+  font-weight: 700;
+  color: #141414;
+}
+
+
+
+
+
+
+
+.caixa-de-informaçoes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  gap: 20px 90px;
+  padding: 30px 30px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  position: relative;
+}
+.caixa-de-informaçoes::before{
+  content: "";
+  position: absolute;
+  background:linear-gradient(#B6F829, #67DD0A) ;
+  width: 4px;
+  height: 20px;
+  left: -4px;
+  top: 30px;
+  
+}
+.caixa-de-informaçoes-titulo{
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.caixa-de-informaçoes-informaçoes{
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.25rem;
+}
+.caixinha-habilidades{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+.caixinha-habilidades li{
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  color: #141414;
+  background-color: #FFF;
+  display: block;
+}
+.ano-da-empresa-detalhe{
+  font-size: 0.875rem;
+  color: #525252;
+  position: absolute;
+  text-align: right;
+  width: 60px;
+  left: -90px;
+  top: 32px;
+}
+
+
+@media(max-width: 1000px){
+
+  .experiencias-escrita{
+    font-size: 8rem;
+  }
+  .experiencias-informaçoes{
+    font-size: 1.25rem;
+  }
+  .caixa-de-informaçoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    padding: 30px 30px;
+  }
+  .caixa-de-informaçoes-titulo{
+    font-size: 1rem;
+}
+.caixa-de-informaçoes-informaçoes{
+  font-size: 0.75rem;
+  color: #525252;
+  line-height: 1.25rem;
+}
+.caixinha-habilidades li{
+  font-size: 0.75rem;
+}
+}
+
+
+
+
+@media (max-width: 900px){
+  .caixa-de-informaçoes{
+    padding: 20px 20px;
+  }
+  .experiencias-informaçoes{
+    font-size: 0.750;
+  }
+}
+@media (max-width: 700px){
+  .caixa-de-informaçoes{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .caixa-de-informaçoes::before{
+    width: 20px;
+    height: 4px;
+    left: 20px;
+    top: -4px;
+  }
+  .ano-da-empresa-detalhe{ 
+    position: initial;
+    text-align: left;
+    width: 60px;
+  }
+}
+@media (max-width: 500px){
+  .conteiner{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .experiencias-escrita{
+    font-size: 6rem;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 400px){
+  .experiencias-informaçoes{
+    font-size: 1rem;
+  }
+
+  @media (max-width: 350px){
+    .experiencias-escrita{
+      font-size: 5rem;
+    }
+}
+
+}
